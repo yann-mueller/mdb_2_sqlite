@@ -1,6 +1,9 @@
 import pyodbc
 import sqlite3
 
+# Path to your .mdb and .sqlite files
+mdb_path = '.../xxx.mdb'
+sqlite_path = '.../xxx.sqlite'
 
 def mdb_to_sqlite(mdb_path, sqlite_path):
     # Connect to the .mdb file using ODBC
@@ -53,9 +56,6 @@ def mdb_to_sqlite(mdb_path, sqlite_path):
 
     print("Conversion completed.")
 
-# Path to your .mdb and .sqlite files
-mdb_path = 'C:/Users/yannm/Dropbox/04 PhD/06 Projects/Oases/03 Code/01_build/input/hwsd/HWSD2.mdb'
-sqlite_path = 'C:/Users/yannm/Dropbox/04 PhD/06 Projects/Oases/03 Code/01_build/input/hwsd/sqlite/hwsd2.sqlite'
 
 # Call the function to perform the conversion
 mdb_to_sqlite(mdb_path, sqlite_path)
